@@ -1,0 +1,44 @@
+What is the difference between a process and a thread?
+How do you create a thread in Java or any other language?
+What is the difference between Runnable and Thread in Java?
+Explain the concept of thread synchronization.
+What is a deadlock? How can you prevent or resolve it?
+What is a race condition? How do you avoid it?
+What is thread safety? How do you ensure that a piece of code is thread-safe?
+Explain the use of synchronized keyword in Java.
+What is the difference between concurrency and parallelism?
+What is the role of a thread pool? Why should you use one?
+What are the different states of a thread lifecycle?
+What is the difference between wait() and sleep() in Java?
+What are the common problems you encounter in multithreading, and how do you solve them?
+Explain the concept of volatile keyword in multithreading.
+How do you handle exceptions in threads?
+What is the purpose of join() method in threads?
+How do you use ReentrantLock in Java?
+What is a semaphore, and how does it work in multithreading?
+Explain the producer-consumer problem and how to solve it using multithreading.
+What are atomic operations, and why are they important in multithreading?
+What is the ExecutorService in Java, and how does it work?
+How do you avoid thread starvation?
+What is the difference between a CountDownLatch and a CyclicBarrier?
+Explain the concept of thread priority. Does it guarantee the order of thread execution?
+What is the difference between Callable and Runnable?
+How does Future and CompletableFuture work in Java?
+What are the best practices to follow while working with multithreading?
+What is a ThreadLocal variable, and when would you use it?
+How do you detect and debug concurrency issues in your code?
+What is the Fork/Join framework in Java? How does it differ from a traditional thread pool?
+
+
+Coding questions
+==========================
+Q1)Problem: Implement the producer-consumer problem using a blocking queue.
+Q2)Problem: Write a program that ensures that multiple threads access a shared resource in a thread-safe manner.
+Q3)Problem: Use Callable and Future to execute a task in a separate thread and retrieve its result.
+Q4)Problem: Implement producer consumer using thread & runnable
+Q5)Problem: Implement a basic thread pool to manage a fixed number of threads and execute tasks.
+Q6)Problem: Write a program that detects a deadlock situation among multiple threads.
+Q7)Problem: Use the Fork-Join framework to solve a problem that can be broken into smaller subproblems (e.g., summing an array).
+Q8)Problem: Write a program that demonstrates the difference between Thread.join() and Object.wait().
+
+Example: Use both methods to manage thread execution flow.
