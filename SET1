@@ -1,0 +1,1092 @@
+1)  /* Problem Name is &&& Best Average Grade &&& PLEASE DO NOT REMOVE THIS LINE. */
+
+
+/*
+ **  Instructions:
+ **
+ **  Given a list of student test scores, find the best average grade.
+ **  Each student may have more than one test score in the list.
+ **
+ **  Complete the bestAverageGrade function in the editor below.
+ **  It has one parameter, scores, which is an array of student test scores.
+ **  Each element in the array is a two-element array of the form [student name, test score]
+ **  e.g. [ "Bobby", "87" ].
+ **  Test scores may be positive or negative integers.
+ **
+ **  If you end up with an average grade that is not an integer, you should
+ **  use a floor function to return the largest integer less than or equal to the average.
+ **  Return 0 for an empty input.
+ **
+ **  Example:
+ **
+ **  Input:
+ **  [["Bobby", "87"], = 87/1
+ **   ["Charles", "100"],  = (100+22)/2
+ **   ["Eric", "64"], = 64/1
+ **   ["Charles", "22"]].
+ **  "Charles" : [100+22,2]
+ **  Expected output: 87
+ **  Explanation: The average scores are 87, 61, and 64 for Bobby, Charles, and Eric,
+ **  respectively. 87 is the highest.
+
+
+2)1. Longest Uniform Substring
+Implement the method longestUniformSubstring. This method should return an array of two integers that correctly identifies the location of the longest uniform substring within the  input string. Item1 of the array is the start index and Item2 is the length.
+e.g. for the input: "abbbccda" the longest uniform substring is "bbb" (which starts at index 1 and is 3 characters long).Therefore the return value would be a [1, 3].
+
+=============================================================
+
+
+1) a = [1,0,1,0,0,0,1,1,0,1,1]
+
+You need shift the 0 in left and 1s in the right.
+
+2) array = [1, 2, 3, 1, 2, 4, 5, 6, 4, 5, 6]
+
+Find the non-repeating number in the array
+
+3) What is the use of RESTApi's ?
+4) how spring framework works ?
+5) Explain Dependency injection ?
+6) How does spring create beans ?
+7) What is feature's java provides compare to other programming languages ?
+8) explain static keyword in java ?
+9) What is final keyword ?
+10) What is the use of synchronization in java and where do we use it ?
+11) What is the difference b/w web server and application server ?
+12) what is the use of volatile keyword ?
+13) method overloading and method overriding ?
+
+
+===============================================
+
+1.Convert List to Binary Search Tree
+2.Find the node with maximum value in every path for bianry search tree
+3.Find the node with maximum value in every path for bianry search tree if root is not available
+4.Given a list of integers S and a target number k, write a function that returns a subset of S that adds up to k. If such a subset cannot be made, then return null.
+ int a[]={1,2,3,4,5,6} ,target=6; 
+output={1,2,3},{1,,5}, {2,4},{6} 
+
+
+=========================================================
+
+employee manager
+eid	mid
+101	null
+102	101
+103	101
+104	102
+105	102
+106	103
+
+eid	name
+101	E1
+102	E2
+103	E3
+104	E4
+105	E5
+106	E6
+
+Write SQL query for printing
+Manager
+	Team Size
+E1	2
+E2	2
+E3	1
+
+===========================================================
+
+List<A> list = new ArrayList<>()
+A a1 = new A(101, "A1");
+A a2 = new A(101, "A1");
+list.add(a1);
+list.add(a2);
+A a3 = new A(101, "A1");
+list.contains(a3)  ??? output
+A a1 = new A(101, "A1");
+A a2 = new A(101, "A1");
+print a1==a2
+print a1.equals(a2);
+
+=================================================================
+
+Interviewer name :Somnath  
+ SAP @ Round
+ =========
+1. Why java has provided hashcode() if we always have to override it . Why they have not provided any interface for it ?  
+2.What will happen during insertion and retrieval in a hashMap if hashCode() always returns 1 ? 
+3.What will happen during insertion and retrieval in a hashMap if hashCode() always returns 1 and equals() is also always true ? 
+4.Catalog service fetch from Product service to show the catalog details. 
+Now during updating some Product details at that time what will catalog service show. Is it violating Microservice principle in some way ? 
+5. Explain Collection interface and its implementation. 
+6.For iteration through collection of object which data structure should we choose ? 
+  If you are choosing ArrayList then  why not choose hashSet? 
+
+7.How java is platform independent? Explain in details with JVM . 
+8.Explain Microservice. 
+Coding problem : 
+Give Pole height is maximum. 
+
+Q> 1. Return  the  height from which we can see the pole from each building.  
+Example : for building number 3 its height is 10 m now  
+height value from which we can see the pole = 10m -9m = 1m  
+
+And from building 5 we cannot see the pole cause building 3 will prevent it. 
+Int [] buildingHeights = [ 1,8,3,4,5] ; 
+ 
+Q> 2 .  
+
+Int [] buildingHeights = [ 8,6,7,1,2] ; 
+
+Int [] distanceFromPole=[4,3,1,2,7]; 
+ 
+Building 1 has height 8m and it is 4m away from the pole. 
+
+Building 2 has height 6m and it is 1m away from the pole. 
+
+Building 3 has height 7m and it is 2m away from the pole. 
+
+Building 4 has height 1m and it is 7m away from the pole. 
+ 
+Now  Return  the height value from each building so that from those floors we can see the Pole. 
+
+
+=========================================================================================
+
+1) Explain about Abstraction and Encapsulation
+2) What is compleable future, where have you used in in your project
+3) Java Code - find Second largest and Second Smallest element in the array
+4) Java Code - filter the distict record from a list of integer
+5) Explain Comparator and Comparable
+6) Caching - Types - Where have you implemented both in your project
+7) SQL query - Find second highest salary from the employee table - I did using limit and ordering but interviewer
+wanted some other way to do it.
+8) Where have you implmented recusive solution in you real project and what challenges did you face?
+9) Difference between StringBuffer and StringBuilder.
+10) What is functional Interface and name some existing F.I?
+11) What all annotations have you used in Spring boot?
+12) Suppose we have one service can have two DB connected to it?
+13) We have two service S1 and S2 and if S1 transaction was successful and S2's was failed how to do you handle it?
+14) How to roll back the transactions?
+
+
+=======================================================================================
+
+1. DNF problem with 0s and 1s
+2. DNF problem with 0s , 1s and 3s
+3.Find the non repeated element from the array
+4.Employee -> Id, Name, department_id
+Department-> deparment_id, department_name
+ 
+Write a query show number of employess in each department
+ 
+Department -> 
+11, a
+12, b
+13, c
+14, d
+ 
+Employee ->
+1, Abc, 11
+2, xyz, 12
+3, aa, 11
+4, nn, 22
+} 
+
+5. How do you make sure the data you publish to kafka topic will reach that topic only.
+6. What is overriding and overloading
+7. can we change return type during overriding and overloading
+8. How does underlying Virtual machines work in EC2 instance.
+
+===========================================================================================
+
+R2:
+===
+
+1. You are given the heads of two sorted linked lists list1 and list2.
+
+Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+Return the head of the merged linked list.
+
+2. Explain about your current object
+
+3. Implement producer and consumer in java 
+
+4. Explain features of String in java
+
+5. Sealed and non sealed classes
+
+6. difference between java 8 and 11 and 17
+
+7. What is functional programming
+
+8. What is the main feature that came from java 8
+
+=============================================================
+
+R2:
+=========
+1.Convert List to Binary Search Tree
+2.Find the node with maximum value in every path for bianry search tree
+3.Find the node with maximum value in every path for bianry search tree if root is not available
+4.Given a list of integers S and a target number k, write a function that returns a subset of S that adds up to k. If such a subset cannot be made, then return null.
+ int a[]={1,2,3,4,5,6} ,target=6; 
+output={1,2,3},{1,,5}, {2,4},{6} 
+
+===============================
+
+Java code - list of person object, no duplicates, sort based on first name
+Java code - Cyclic String
+1.Pattern - KING, Inputs  INGK - true,GNKI - false,GKIN-true
+isCyclicString(String pattern,String input){
+}
+
+Explain String mutable and immutable concept
+Java code - Write Immutable Java class
+Java code - Write CustomException
+Difference between final, finally, finalize
+when will you use Abstract and Interface
+Spring REST Controller
+Spring @ControllerAdvice
+Spring @ExceptionHandler
+Spring Batch
+Spring REST write POST method and if the api receives more calls then throw custom exception
+SQL-> Departments/Students, write query to get which departments has more students
+
+
+==================================
+
+Q1)String s = "abcdef";
+Reverse the string using recursion
+
+Q2) Given 2 sorted arrays
+int[] a = {7, 9, 13}
+int[] b = {1, 3, 6, 8, 10, 11} 
+
+merge the arrays using third array and it should be in sorted order ? Time and space complexity of the program I wrote
+
+Q3) employee manager
+eid	mid
+101	null
+102	101
+103	101
+104	102
+105	102
+106	103
+ 
+ 
+ 
+eid	name
+101	E1
+102	E2
+103	E3
+104	E4
+105	E5
+106	E6
+ 
+ 
+ Write SQL query for printing
+Manager
+	Team Size
+E1	2
+E2	2
+E3	1
+
+Q4) class A {
+   long id;
+   String name;
+}
+ 
+List<A> list = new ArrayList<>()
+A a1 = new A(101, "A1");
+A a2 = new A(101, "A1");
+ 
+list.add(a1);
+list.add(a2);
+ 
+A a3 = new A(101, "A1");
+ 
+list.contains(a3)  ??? output
+ 
+A a1 = new A(101, "A1");
+A a2 = new A(101, "A1");
+print a1==a2
+print a1.equals(a2);
+
+(4.i)  What will be the output?
+ 4.ii) What does this equals method is doing?
+ 
+ 
+ Q5) How to implement security on API which we use for internal purpose & not directly exposed
+ Q6) How do we achieve abstraction?
+ Q7) inheritence and composition
+ 
+ =======================================
+ 
+ 1) get duplicate elements from an array using collections framework ?
+ 	int[] arr = {1, 2, 1, 4, 5, 5, 6}; // op => 1, 5
+
+2) get the kth value from an unsorted array ?
+	{1,2, 3,4,7, 1, 8}; [ex: if k = 5, o/p = 7]
+
+3) How will structure an entity using OOPs concept for each user who has some Role to perform certain functionality (ex: user1 is admin, user2 is candidate) 
+4) list about the collections and explain the functionality of each classes ?
+
+===============================
+1) a = [1,0,1,0,0,0,1,1,0,1,1]
+
+You need shift the 0 in left and 1s in the right.
+
+2) array = [1, 2, 3, 1, 2, 4, 5, 6, 4, 5, 6]
+
+Find the non-repeating number in the array
+
+3) What is the use of RESTApi's ?
+4) how spring framework works ?
+5) Explain Dependency injection ?
+6) How does spring create beans ?
+7) What is feature's java provides compare to other programming languages ?
+8) explain static keyword in java ?
+9) What is final keyword ?
+10) What is the use of synchronization in java and where do we use it ?
+11) What is the difference b/w web server and application server ?
+12) what is the use of volatile keyword ?
+13) method overloading and method overriding ?
+
+=============================
+SAP_ROUND_1_SUCCESSFACTOR_TEAM_SURESH::
+========================================
+
+
+1) Give and string count each vowel character in the String;
+2) Write JUNIT sample test case only high level how will you write it;
+3) implement custom arraylist 
+4) Are you aware of DIT and SIT.
+
+ =========================================================================
+
+Walmart:
+==========
+JAVA Questions Bank
+
+Set 1
+ 
+--> •	Given an array list, print all the elements in the array
+-->•	Add a new element list. 1.empty list 2. end of list 
+-->•	Sort the elements in reverse order
+-->•	Converting this program to a springBoot Controller
+-->•	Comparator Vs Comparable
+-->•	String Builder vs String Buffer
+-->•	Various programmatical scenarios based on Multi Threading 
+-->•	Explain Deadlock Concept
+-->•	Setting up Spring Boot application
+-->•	Find Subarray with given Sum from Array of non-negative Numbers
+Given a 1-based indexing array arr[] of non-negative integers and an integer sum. 
+You mainly need to return the left and right indexes(1-based indexing) of that subarray.
+ In case of multiple subarrays, return the subarray indexes which come first on moving from left to right. 
+ If no such subarray exists return an array consisting of element -1
+ 
+ 
+Set 2
+ 
+-->1.	what are advantages of spring boot over spring
+-->2.	what advantage of dependency injection
+-->3.	what is inversion of control
+-->4.	in object oriented programming what is feature of polymorphism and why its use in overloading in overriding
+-->***5.	what is asynchronous and synchronous call.
+		-->   CompletableFuture<String> future = asyncCall(); // This call returns immediately
+				// Do other tasks here while the asynchronous operation is in progress
+			future.thenAccept(result -> {
+							System.out.println("Operation completed: " + result);
+6.	Explain how to configure Kafka in your microservice project and why kafka use for this architecture.(Project related question)
+--> 7.	How to configure JPA in your project.
+--> 8.	Hibernate-  how to fetch data in JPA.
+ 
+Coding Test-
+1- You are given a 0-indexed array mountain. Your task is to find all the peaks in the mountain array.
+Return an array that consists of indices of peaks in the given array in any order.
+Notes:
+A peak is defined as an element that is strictly greater than its neighboring elements.
+The first and last elements of the array are not a peak.
+mountain = [2,4,4]
+mountain = [2,4,1]
+mountain = [2,4,1,3,2,4,4]
+ 
+2-- Write Java program that checks if two arrays contain the same elements.
+ 
+Sql- Fetch top 5 Student name based on their marks who qualify in subject science from table Classroom
+Student—name, marks, subject
+ 
+ 
+Set 3 
+ 
+1.	how to use synchronized , wait, notify method provide 1 example.
+2.	What is executable framework , how to create thread pool.
+3.	Sync and Async method response handle.
+4.	implement singleton design pattern.
+5.	implement immutable class with containing list in it.
+6.	Give example of aspect oriented programming.
+7.	give example of filter in spring boot application.
+8.	Create functional interface and call the method.
+9.	What is Correlation vs cohesion. 
+10.	What is cloneable interface , deep cloning shallow cloning. 
+11.	List l1={1,2,3,4,5,6,1,2} filter element >2 and <4
+12.	Create map of above list with occurrences.
+
+Set 4
+ 
+1.	Can two consumers from the same consumer group consume one topic?
+2.	How spring boot framework handles multiple requests from browser?
+3.	How to resolve an intermittent issue if database is not responding to application?
+4.	Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+ Example 1:
+Input: nums = [0,1,0,3,12]
+Output: [1,3,12,0,0]
+5.	Spring boot bean scopes
+6.	Features of Microservices
+About the last project and responsibilities
+
+
+Set 5
+1.	Given a string s containing 2 types symbols ( & ) of return true if s is valid.
+
+rules define a valid string:
+o	Any left parenthesis '(' must have a corresponding right parenthesis ')'
+•	Any right parenthesis ')' must have a corresponding left parenthesis '('
+•	Left parenthesis '(' must go before the corresponding right parenthesis ')'
+
+
+
+2.	Find K’th Largest Element in Unsorted Array
+
+input[] = {2,5,1,0,9,8}; K=3
+
+
+3.	Given an array of integers nums, calculate the pivot index of this array.
+The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right. Return the leftmost pivot index. If no such index exists, return -1.
+Example - [1,2,5,3]
+
+
+
+Set 6
+
+1. What are microservices patterns you followed in your projects and explain
+2. Explain Circuit Breaker Pattern.
+3. How will you test your application (interms of unit and integration testing / any other tools such as cucumber etc)
+4. Annotations that you used while unit testing
+5. Comparator vs Comparable
+6. HashMap internal working
+7. Difference between ArrayList and LinkedList
+8. Given an employee list, get the employees whose age is greater than 30 using stream api
+9. Given a string, print the no of occurences of each character
+=======================================
+
+Easy Coding Questions
+=================================================
+1.Check Prime Number --> Boundry Condition-> n==1, n==2; for i=1; i <= srt(n); i++ --> n%i != 0 --> false
+--> Write a function that checks if a given integer is a prime number.
+
+-->2.Fibonacci Sequence
+Write a function to generate the first n numbers in the Fibonacci sequence.
+
+3.-->Reverse a String
+Write a function that takes a string as input and returns it reversed.
+
+4.-->Count Vowels
+Write a function that counts the number of vowels in a given string.
+
+5.-->Factorial
+Write a function to calculate the factorial of a non-negative integer.
+
+6.-->Palindrome --> 2 Pointer
+Write a function that checks if a given string is a palindrome (reads the same forward and backward).
+
+7.--> Sum of Digits --> Extraction using % / 10 and remove the digit using / by 10 and add into sum.
+Write a function that calculates the sum of the digits of a given integer.
+
+8.--> Find Largest Element
+Write a function that finds the largest element in an array of integers.
+
+9.-->Find GCD --> Euclids algo -> call(b, a%b) --> return if(b==0) return a; 
+Write a function to find the greatest common divisor (GCD) of two integers.
+
+10.--> Anagram Check --> Convert to char array --> Arrays.sort(a,b) --> check Arrays.equals(a,b)
+Write a function that checks if two strings are anagrams of each other.
+
+
+=============================================
+
+WALMART 2nd Round:
+===================
+
+Threads concepts like Runnable callable deadlock multithreading 
+How do you configure multiple databases in spring boot application in configuration file
+How do you configure custom security in spring boot configuration class
+What is @Autoconfiguration does and @SepringBootApplication annotation and hidden annotations inside it.
+@Transactional annotation used for what is the advantage of having it.
+@Conditional annotation on class and on method what it does when can we use it
+Internal working of HasMap and Cuncurrent HashMap
+Asked to write Junit test class and run it should pass and need to explain all the annotations used in test class
+Asked to remove duplicate from array in quickest possible way
+what is partition in kafka and what is offset
+Diiff beetween partion and topic 
+unit integration and functional test cases as well
+
+===================================================================================
+
+Array & ArrayList coding questions
+============================================
+
+
+Q1)Find the Missing Number
+Given an array containing n distinct numbers taken from 0 to n, find the missing number in O(n) time and O(1) space.
+
+---> Solution:
+public class MissingNumberSum {
+    public static int findMissingNumber(int[] nums) {
+        int n = nums.length; 
+        
+        int totalSum = (n + 1) * (n + 2) / 2;  
+        
+        int arraySum = 0;
+        for (int num : nums) {
+            arraySum += num;
+        }
+        
+        return totalSum - arraySum;
+    }
+}
+
+
+Q2)Rotate Array --> Recursion + 2 Pointer
+Given an array, rotate it to the right by k steps, where k is non-negative.
+
+-->
+public class RotateArray {
+    private static void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    public static void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
+		reverse(nums, 0, n - 1);    
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, n - 1);
+    }
+}
+
+
+Q3)Two Sum --> Map Look up and frequency count.
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+--> Solution
+	class Solution {
+	    public int[] twoSum(int[] nums, int target) {
+	        Map<Integer, Integer> seen =  new HashMap<>();
+	        for(int i=0; i < nums.length; i++) {
+	            int x = target - nums[i];
+	            if(seen.containsKey(x)) {
+	                return new int[] {seen.get(x), i};
+	            } else {
+	                seen.put(nums[i], i);
+	            }
+	        }
+	        return new int[0];
+	    }
+	}
+
+Q4)Move Zeros
+Given an array, move all zeros to the end without changing the order of non-zero elements.
+-->
+	public class MoveZeroes {
+    public static void moveZeroes(int[] nums) {
+        int nonZeroIndex = 0; 
+        
+       
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[nonZeroIndex] = nums[i];
+                nonZeroIndex++;
+            }
+        }
+        
+       
+        for (int i = nonZeroIndex; i < nums.length; i++) {
+            nums[i] = 0;
+        }
+    }
+}
+
+
+Q5)Maximum Subarray --> Kaden's Algo 
+Find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+
+--> Solution:
+	public class MaximumSubarray {
+    public static int maxSubArray(int[] nums) {
+        int maxSum = nums[0];
+        int currentSum = nums[0];
+        
+        for (int i = 1; i < nums.length; i++) {
+            currentSum = Math.max(nums[i], currentSum + nums[i]);
+            maxSum = Math.max(maxSum, currentSum);
+        }
+        
+        return maxSum;
+    }
+}
+
+
+Q6)Contains Duplicate --> CHeck with Hash Set
+Given an array of integers, check if any value appears at least twice.
+
+--> Solution:
+	
+	class Solution {
+	    public boolean containsDuplicate(int[] nums) {
+	        HashSet<Integer> seen = new HashSet<>();
+	        for(int num : nums) {
+	            if(seen.contains(num)) {
+	                return true;
+	            } else {
+	                seen.add(num);
+	            }
+	        }
+	        return false;
+	    }
+	}
+
+Q7)Merge Intervals
+Given a collection of intervals, merge all overlapping intervals.
+
+--> Solution::
+import java.util.Arrays;
+import java.util.LinkedList;
+
+public class MergeIntervals {
+
+    public static int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        LinkedList<int[]> merged = new LinkedList<>();
+
+        for (int[] interval : intervals) {
+                merged.add(interval);
+            } else {
+                merged.getLast()[1] = Math.max(merged.getLast()[1], interval[1]);
+            }
+        }
+
+        return merged.toArray(new int[merged.size()][]);
+    }
+}
+
+
+Q8)Kth Largest Element --> Using Priority Queue
+Find the kth largest element in an unsorted ArrayList.
+
+--->Solution.
+import java.util.*;
+class Solution {
+
+    static void kth_Largest_MaxHeap(int[] arr, int k) {
+
+        PriorityQueue<Integer>pq= new PriorityQueue<>((a,b)->b-a);
+        
+        int n = arr.length  ;
+
+        for (int i = 0; i < arr.length; i++) {
+            pq.add(arr[i])  ;
+        }
+
+        int f = k - 1 ;
+
+        while (f > 0) {
+            pq.remove()  ;
+            f-- ;
+        }
+
+        System.out.println("Kth Largest element "+pq.peek())  ;
+    }
+
+
+Q9)Subsets
+Given an ArrayList of distinct integers, return all possible subsets (the power set).
+
+--> SOlution:
+	class Solution {
+	    public List<List<Integer>> subsets(int[] nums) {
+	        List<List<Integer>> result = new ArrayList<>();
+	        getUniqueSubset(0, nums, new ArrayList<>(), result);
+	        return result;
+	    }
+	    public static List<List<Integer>> getUniqueSubset(int index, int[] nums, List<Integer> current, List<List<Integer>> result) {
+	        result.add(new ArrayList<>(current));
+	        
+	        for(int i=index; i< nums.length; i++) {
+	            current.add(nums[i]);
+	            getUniqueSubset(i+1, nums, current, result);
+	            current.remove(current.size() - 1);
+	        }
+	        return result;
+	}
+	}
+	
+
+Q10)Intersection of Two Arrays
+Given two ArrayLists, return the intersection of the two arrays.
+
+--> Solution::
+	Given two ArrayLists, return the intersection of the two arrays.
+	
+	import java.util.*;
+	class IntersectionOfArrays {
+	    
+	    public static List<Integer> findIntersection(ArrayList<Integer> array1, ArrayList<Integer> array2) {
+	        // Use a HashSet to store the unique elements from array1
+	        Set<Integer> set = new HashSet<>(array1);
+	        // To store the result without duplicates
+	        Set<Integer> intersection = new HashSet<>();
+	        
+	        // Iterate through the second array
+	        for (Integer num : array2) {
+	            // If the element is present in the set, it's part of the intersection
+	            if (set.contains(num)) {
+	                intersection.add(num);
+	            }
+	        }
+	        
+	        // Return the intersection as a list
+	        return new ArrayList<>(intersection);
+	    }
+	}
+
+Q11)Sort Colors
+Given an ArrayList of colors represented as integers (0, 1, 2), sort them in-place.
+You have an ArrayList where each element is either 0, 1, or 2. You need to sort the list in-place so that all 0s come first, followed by all 1s, and then all 2s.
+eg: ArrayList<Integer> colors = new ArrayList<>(List.of(2, 0, 1, 2, 0, 1, 1));
+output : [0, 0, 1, 1, 1, 2, 2]
+
+--> SOlution::
+
+	class Solution {
+	    public void sortColors(int[] nums) {
+	        int low = 0, mid = 0, high = nums.length - 1;
+	
+	        while (mid <= high) {
+	            if (nums[mid] == 0) {
+	                swap(nums, low, mid);
+	                low++;
+	                mid++;
+	            } else if (nums[mid] == 1) {
+	                mid++;
+	            } else { // nums[mid] == 2
+	                swap(nums, mid, high);
+	                high--;
+	            }
+	        }
+	    }
+	
+	    private void swap(int[] nums, int i, int j) {
+	        int temp = nums[i];
+	        nums[i] = nums[j];
+	        nums[j] = temp;
+	    }
+	}
+
+
+Q12)Frequency of Elements
+Given an ArrayList, return the frequency of each element in the list.
+-->
+Solution::
+
+	public class FrequencyCounter {
+	    public static HashMap<Integer, Integer> countFrequencies(ArrayList<Integer> list) {
+	        HashMap<Integer, Integer> frequencyMap = new HashMap<>();
+	
+	        // Iterate through the list and count frequencies
+	        for (Integer num : list) {
+	            frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
+	        }
+	
+	        return frequencyMap;
+	    }
+	}
+
+===========================================================
+
+
+String Question:
+==============
+
+
+1. Word Count:
+=================
+public class WordCount {
+    public static void main(String[] args) throws IOException{
+        Map<String, Integer> freqCount = new HashMap<>();
+       // String paragraph = "the day is sunny the the the sunny is is";
+       String path = "C:\\Users\\manjekumar\\Java_Workspace\\Demo\\StringExercise\\abc.txt";
+        BufferedReader reader = new BufferedReader(new FileReader(path));
+        String line;
+        while((line = reader.readLine()) != null){
+            String[] words = line.split("\\s+");
+
+            for(String word : words){
+                freqCount.put(word, freqCount.getOrDefault(word, 0) + 1);
+            }
+        }
+
+        reader.close();
+
+        List<Map.Entry<String, Integer>> wordList = new ArrayList<>(freqCount.entrySet());
+        wordList.sort((a,b) -> b.getValue().compareTo(a.getValue()));
+
+        for(Map.Entry<String, Integer> entry : wordList){
+            System.out.println(entry.getKey() +"  " + entry.getValue());
+        }
+
+    }
+}
+
+================================
+2. Reverse String :
+===================
+
+	class ReverseStringWord {
+	    public static void main(String args[]) {
+	        String str = "the sky is blue";
+	        String rev = reverseWord(str.trim());
+	        System.out.println(rev);
+	    }
+	    
+	    public static String reverseWord(String str) {
+	        String[] str1 = str.split("\\s+");
+	        
+	        StringBuilder sb = new StringBuilder();
+	        for(int i=str1.length-1; i>=0; i--) {
+	            sb.append(str.charAt(i));
+	            if(i != 0) {
+	                sb.append(" ");
+	            }
+	        }
+	        return sb.toString();
+	    }
+	}
+
+==============================================
+
+3) Reverse string using recursion
+
+	class Reverse {
+	    public static void main(String args[]) {
+	        String str = "Tuesday";
+	        StringBuilder rev = new StringBuilder();
+	        reverseString(0, str.length()-1, rev, str);
+	        System.out.println(rev.toString());
+	    }
+	    
+	    public static void reverseString(int left, int right, StringBuilder rev, String str) {
+	        
+	        if(right < left) {
+	            return;
+	        }
+	        rev.append(str.charAt(right));
+	        reverseString(left, right-1, rev, str);
+	    }
+	}
+	
+===========================================================================
+
+4) Remove Duplicate Characters
+	Problem: Remove duplicate characters from a string while maintaining the original order.
+	
+	import java.util.*;
+	
+	class Duplicate {
+	    public static void main(String args[]) {
+	        String str = "abcaa";
+	        HashSet<Character> seen = new HashSet<>();
+	        StringBuilder unique = new StringBuilder();
+	        
+	        for(int i=0; i< str.length(); i++) {
+	            if(!seen.contains(str.charAt(i))) {
+	                unique.append(str.charAt(i));
+	                seen.add(str.charAt(i));
+	            }
+	        }
+	        System.out.println(unique.toString());
+	    }
+	}
+	
+===========================================================
+
+5) Anagram::
+	
+	class Anagram {
+	    public static void main(String args[]) {
+	        String str1 = "listen";
+	        String str2 = "isltne";
+	        boolean isAnagram = anagram(str1, str2);
+	        System.out.println(isAnagram);
+	    }
+	    
+	    public static boolean anagram(String str1, String str2) {
+	        if(str1.length() != str2.length()) {
+	            return false;
+	        }
+	        char[] arr1 = str1.toCharArray();
+	        char[] arr2 = str2.toCharArray();
+	        
+	        Arrays.sort(arr1);
+	        Arrays.sort(arr2);
+	        
+	        return Arrays.equals(arr1, arr2);
+	    }
+	}
+
+===========================================================================
+
+6) String Rotation:
+	
+	class StringRotation {
+	    public static void main(String args[]) {
+	        String str1 = "abcde";
+	        String str2 = "deabc";
+	        boolean isRotation = isRotation(str1, str2);
+	        System.out.println(isRotation);
+	    }
+	    
+	    public static boolean isRotation(String str1, String str2) {
+	        if(str1.length() != str2.length()) {
+	            return false;
+	        }
+	        String newStr = str1 + str2;
+	        
+	        return newStr.contains(str2);
+	    }
+	}
+	
+=========================================================================================
+
+7) Count Substrings
+	
+	class PossibleSubString {
+	    public static void main(String args[]) {
+	        String str = "manjeet";
+	        List<List<Character>> result = new ArrayList<>();
+	        generateSubstrings(0, str, new ArrayList<>(), result);
+	        System.out.println(result);
+	    }
+	    
+	    public static void generateSubstrings(int index, String str, List<Character> current, List<List<Character>> result) {
+	        result.add(new ArrayList<>(current));
+	        
+	      if(index > str.length() - 1) {
+	          return;
+	      }
+	       
+	       for(int i=index; i< str.length(); i++) {
+	          current.add(str.charAt(i));
+	          countSubstrings(i+1, str, current, result);
+	          current.remove(current.size() - 1);
+	       }
+	    }
+	}
+
+=============================================================================================================
+
+8) FirstNonRepeatedChar:: Example: Input: "leetcode", Output: 'l'.
+
+	class FirstNonRepeatedChar {
+	    public static void main(String args[]) {
+	        String str = "leetcode";
+	        Character ch = firstNonRepeatedChar(str);
+	        System.out.println(ch);
+	    }
+	    
+	    public static Character firstNonRepeatedChar(String str) {
+	        
+	       Map<Character, Integer> map = new LinkedHashMap<>();
+	       for(int i=0; i< str.length(); i++) {
+	                map.put(str.charAt(i), 
+	                map.getOrDefault(str.charAt(i), 0) + 1);
+	       }
+	       
+	       for(Map.Entry<Character, Integer> entry : map.entrySet()) {
+	           if(entry.getValue() == 1) {
+	               return entry.getKey();
+	           }
+	       }
+	       return null;
+	    }
+	}
+	
+=============================================================================
+9) Vowels Count
+
+class CountVowelsAndConsonants {
+	    public static void main(String args[]) {
+	        String str = "Hello World";
+	        countVowelsAndConsonants(str.toLowerCase());
+	    }
+	    
+	    public static void countVowelsAndConsonants(String str) {
+	        int vowels = 0;
+	        int consonants = 0;
+	        
+	       for(int i=0; i< str.length(); i++) {
+	           char ch = str.charAt(i);
+	          if (ch >= 'a' && ch <= 'z') {
+	               if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+	                    vowels++;   
+	               } else {
+	                   consonants++;
+	               }
+	          }
+	       }
+	        System.out.println("Vowels : " + vowels + " Consonants : " + consonants);
+	    }
+	}
+
+================================================================================================
+
+10) Check Pallindrome
+
+class CheckPalindrome {
+	    public static void main(String args[]) {
+	        String str = "racecar";
+	        boolean isPalindrome = checkPalindrome(str.toLowerCase());
+	        System.out.println(isPalindrome);
+	    }
+	    
+	    public static boolean checkPalindrome(String str) {
+	        
+	        int left = 0;
+	        int right = str.length()-1;
+	        
+	        while(left < right) {
+	            if(str.charAt(left) != str.charAt(right)) {
+	                return false;
+	            }
+	            left++;
+	            right--;
+	        }
+	        return true;
+	    }
+	}
+==============================================================
+
+
+
+
+
+
+
