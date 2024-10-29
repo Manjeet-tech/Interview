@@ -1,0 +1,24 @@
+SAP LABS:
+---------
+
+Coding Questions :
+
+Create an API for Tiny URL Management
+
+Create an API in Spring Boot that converts a long URL into a tiny URL, stores it in a database, and allows retrieving the original URL based on the tiny URL. Assume this feature is for a social media platform, e.g., Twitter, where users share URLs.
+
+Implement session management to track URLs for each session.
+How to Kill an Existing Port and Run the Application on Another Port.
+Explain the steps to terminate an application running on a specific port (e.g., 8080) and reconfigure Spring Boot to use a different port.
+How to Add Dump Data to a Java Application.
+Describe methods to add initial (dump) data to a Java application, such as using data.sql, import.sql, ApplicationRunner, or custom data loaders.
+
+
+Theoretical Questions :
+
+ArrayList vs. Other Lists
+Explain the differences between ArrayList and other list implementations in Java, such as LinkedList and Vector, with examples of when each is preferred.
+String vs. StringBuilder vs. StringBuffer
+Compare String, StringBuilder, and StringBuffer in Java, focusing on immutability, thread-safety, and performance.
+Adding Swagger Dependencies in pom.xml
+List the dependencies needed to add Swagger to a Spring Boot project, and explain how to configure Swagger to document APIs.
