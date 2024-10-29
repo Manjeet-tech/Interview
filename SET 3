@@ -22,3 +22,72 @@ String vs. StringBuilder vs. StringBuffer
 Compare String, StringBuilder, and StringBuffer in Java, focusing on immutability, thread-safety, and performance.
 Adding Swagger Dependencies in pom.xml
 List the dependencies needed to add Swagger to a Spring Boot project, and explain how to configure Swagger to document APIs.
+
+
+====================================================
+
+SET 5.
+========
+
+1. What is Abstraction
+2. What is inheritance and composition , difference between them
+3. Class E {
+  long id;
+  String name;
+  public E(long id, String name) {
+    this.id = id;
+    this.name = name;
+  }
+
+}
+ 
+E e1 = new E(101, "e1");
+E e2 = new E(101, "e1");
+ 
+List<E> list = new ArrayList<>();
+list.add(e1);
+boolean b = list.contains(e2);
+what should you do to make b as true?
+
+4.reverse a string using recursion,( make sure you handle NPE and all edge cases)
+
+5.int[] a = {1,2,5,1,2,7,9}; write programs to find the repeated elements in the array
+
+6.int[] a = {1,5,7,9}
+int[] b = {2,4,8,10}
+write a program to merge these two sorted arrays .
+
+7.int[] a = {1, 5, 7, 9, 6, 3, 4}
+ 
+find all 2 elements that can sum to 8
+
+8.employee_manager
+eid	mid
+101	null
+102	101
+103	101
+104	102
+105	103
+106	102
+ 
+ 
+employee 
+eid	name
+101	E1
+102 	E2
+103	E3
+104	E4
+105	E5
+106	E6
+
+output:
+E1 2
+E2 2
+E3 1
+
+write sql query for getting this output.
+
+9. How did u secure your apis in your project
+
+10. How can u implement aysnc processing in your spring boot project
+
