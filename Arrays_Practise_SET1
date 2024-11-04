@@ -1,0 +1,243 @@
+SET-1 
+======
+Q1)Find the Missing Number
+Given an array containing n distinct numbers taken from 0 to n, find the missing number in O(n) time and O(1) space.
+
+---> Solution:
+public class MissingNumberSum {
+    public static int findMissingNumber(int[] nums) {
+        int n = nums.length; 
+        
+        int totalSum = (n + 1) * (n + 2) / 2;  
+        
+        int arraySum = 0;
+        for (int num : nums) {
+            arraySum += num;
+        }
+        
+        return totalSum - arraySum;
+    }
+}
+
+
+Q2)Rotate Array --> Recursion + 2 Pointer
+Given an array, rotate it to the right by k steps, where k is non-negative.
+
+-->
+public class RotateArray {
+    private static void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    public static void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
+		reverse(nums, 0, n - 1);    
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, n - 1);
+    }
+}
+
+
+Q3)Two Sum --> Map Look up and frequency count.
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+--> Solution
+	class Solution {
+	    public int[] twoSum(int[] nums, int target) {
+	        Map<Integer, Integer> seen =  new HashMap<>();
+	        for(int i=0; i < nums.length; i++) {
+	            int x = target - nums[i];
+	            if(seen.containsKey(x)) {
+	                return new int[] {seen.get(x), i};
+	            } else {
+	                seen.put(nums[i], i);
+	            }
+	        }
+	        return new int[0];
+	    }
+	}
+
+Q4)Move Zeros
+Given an array, move all zeros to the end without changing the order of non-zero elements.
+-->
+	public class MoveZeroes {
+    public static void moveZeroes(int[] nums) {
+        int nonZeroIndex = 0; 
+        
+       
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[nonZeroIndex] = nums[i];
+                nonZeroIndex++;
+            }
+        }
+        
+       
+        for (int i = nonZeroIndex; i < nums.length; i++) {
+            nums[i] = 0;
+        }
+    }
+}
+
+
+Q5)Maximum Subarray --> Kaden's Algo 
+Find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+
+--> Solution:
+	public class MaximumSubarray {
+    public static int maxSubArray(int[] nums) {
+        int maxSum = nums[0];
+        int currentSum = nums[0];
+        
+        for (int i = 1; i < nums.length; i++) {
+            currentSum = Math.max(nums[i], currentSum + nums[i]);
+            maxSum = Math.max(maxSum, currentSum);
+        }
+        
+        return maxSum;
+    }
+}
+
+
+Q6)Contains Duplicate --> CHeck with Hash Set
+Given an array of integers, check if any value appears at least twice.
+
+--> Solution:
+	
+	class Solution {
+	    public boolean containsDuplicate(int[] nums) {
+	        HashSet<Integer> seen = new HashSet<>();
+	        for(int num : nums) {
+	            if(seen.contains(num)) {
+	                return true;
+	            } else {
+	                seen.add(num);
+	            }
+	        }
+	        return false;
+	    }
+	}
+
+Q7)Merge Intervals
+Given a collection of intervals, merge all overlapping intervals.
+
+--> Solution::
+import java.util.Arrays;
+import java.util.LinkedList;
+
+public class MergeIntervals {
+
+    public static int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        LinkedList<int[]> merged = new LinkedList<>();
+
+        for (int[] interval : intervals) {
+                merged.add(interval);
+            } else {
+                merged.getLast()[1] = Math.max(merged.getLast()[1], interval[1]);
+            }
+        }
+
+        return merged.toArray(new int[merged.size()][]);
+    }
+}
+
+
+Q8)Kth Largest Element --> Using Priority Queue
+Find the kth largest element in an unsorted ArrayList.
+
+--->Solution.
+import java.util.*;
+class Solution {
+
+    static void kth_Largest_MaxHeap(int[] arr, int k) {
+
+        PriorityQueue<Integer>pq= new PriorityQueue<>((a,b)->b-a);
+        
+        int n = arr.length  ;
+
+        for (int i = 0; i < arr.length; i++) {
+            pq.add(arr[i])  ;
+        }
+
+        int f = k - 1 ;
+
+        while (f > 0) {
+            pq.remove()  ;
+            f-- ;
+        }
+
+        System.out.println("Kth Largest element "+pq.peek())  ;
+    }
+
+
+Q10)Sort Colors
+Given an ArrayList of colors represented as integers (0, 1, 2), sort them in-place.
+You have an ArrayList where each element is either 0, 1, or 2. You need to sort the list in-place so that all 0s come first, followed by all 1s, and then all 2s.
+eg: ArrayList<Integer> colors = new ArrayList<>(List.of(2, 0, 1, 2, 0, 1, 1));
+output : [0, 0, 1, 1, 1, 2, 2]
+
+--> SOlution::
+
+	class Solution {
+	    public void sortColors(int[] nums) {
+	        int low = 0, mid = 0, high = nums.length - 1;
+	
+	        while (mid <= high) {
+	            if (nums[mid] == 0) {
+	                swap(nums, low, mid);
+	                low++;
+	                mid++;
+	            } else if (nums[mid] == 1) {
+	                mid++;
+	            } else { // nums[mid] == 2
+	                swap(nums, mid, high);
+	                high--;
+	            }
+	        }
+	    }
+	
+	    private void swap(int[] nums, int i, int j) {
+	        int temp = nums[i];
+	        nums[i] = nums[j];
+	        nums[j] = temp;
+	    }
+	}
+
+
+	
+
+Q10)Intersection of Two Arrays
+Given two ArrayLists, return the intersection of the two arrays.
+
+--> Solution::
+	Given two ArrayLists, return the intersection of the two arrays.
+	
+	import java.util.*;
+	class IntersectionOfArrays {
+	    
+	    public static List<Integer> findIntersection(ArrayList<Integer> array1, ArrayList<Integer> array2) {
+	        // Use a HashSet to store the unique elements from array1
+	        Set<Integer> set = new HashSet<>(array1);
+	        // To store the result without duplicates
+	        Set<Integer> intersection = new HashSet<>();
+	        
+	        // Iterate through the second array
+	        for (Integer num : array2) {
+	            // If the element is present in the set, it's part of the intersection
+	            if (set.contains(num)) {
+	                intersection.add(num);
+	            }
+	        }
+	        
+	        // Return the intersection as a list
+	        return new ArrayList<>(intersection);
+	    }
+	}
