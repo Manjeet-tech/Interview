@@ -1,0 +1,26 @@
+1. Example Callable with Executer Framework
+==================================================
+package Multithreading;
+
+import java.util.concurrent.*;
+
+public class Ex5_CallableExample implements Callable {
+    @Override
+    public Integer call() throws Exception {
+        System.out.println("Callable task executed");
+        return 4;
+    }
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        Future<Integer> future = executorService.submit(new Ex5_CallableExample());
+        Integer result = future.get();
+        System.out.println(result);
+        executorService.shutdown();
+    }
+}
+
+
+
+
+2. 
